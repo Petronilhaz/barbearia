@@ -1,21 +1,11 @@
-import { AppBar, Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Header from "../Header"
 import MenuItem from "./MenuItem";
 
 const Home = () => {
   return (
     <>
-      <AppBar position="static" sx={{marginBottom: "15px"}}>
-        <Typography
-          component="h1"
-          variant="h4"
-          sx={{
-            textAlign: "center",
-            padding: "15px",
-          }}
-        >
-          Barbearia
-        </Typography>
-      </AppBar>
+      <Header title="Barbearia" subTitle="Menu" />
 
       <Box
         sx={{
@@ -24,7 +14,6 @@ const Home = () => {
           alignItems: "center",
         }}
       >
-        
         <MenuItem text="Agendar Corte" />
         <MenuItem text="Tabela de Preços" />
         <MenuItem text="Lista de Espera" />
